@@ -1,20 +1,18 @@
 import 'package:flutter/material.dart';
-
-void main(){
-  runApp(MyApp());
-}
+import 'pages/home/home_page.dart';
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Container(
-            child: Text("Hello world"),
-          ),
-        ),
-      ),
+      routes: {
+        "/": (context) => HomePage(),
+        "/attendance": (context) => AttendancePage(),
+      },
     );
   }
+}
+
+void main() {
+  runApp(MyApp());
 }
