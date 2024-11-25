@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/location/location_page.dart';
+import 'package:flutter_application_1/screens/location/location_page.dart';
 
 class AttendancePage extends StatelessWidget {
   final List<Map<String, dynamic>> members = [
-    {'name': 'John Doe', 'id': 1},
+    {'name': 'Piyush Singh', 'id': 1},
     {'name': 'Jane Smith', 'id': 2},
     {'name': 'Alice Johnson', 'id': 3},
   ];
