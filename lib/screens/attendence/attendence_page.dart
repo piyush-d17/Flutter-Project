@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/screens/info/info_page.dart';
 import 'package:flutter_application_1/screens/location/location_page.dart';
 
 class AttendancePage extends StatelessWidget {
@@ -24,8 +25,11 @@ class AttendancePage extends StatelessWidget {
                 IconButton(
                   icon: Icon(Icons.info),
                   onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('Details for ${member['name']}')),
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => InfoPage(member: member),
+                      ),
                     );
                   },
                 ),
